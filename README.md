@@ -1,2 +1,3 @@
 # Computational-Bio
-notes
+
+notes to self (all project details are on Jupyter)
