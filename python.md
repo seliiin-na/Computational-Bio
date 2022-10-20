@@ -59,3 +59,14 @@ def amino(codon):
         if (codon in codons[i]):
             return aa[i]
 ```
+
+##### Q4: declaring list in Python:
+```python
+# empty list
+my_list = []
+
+# list with mixed data types
+my_list = [1, "Hello", 3.4]
+```
+
+
