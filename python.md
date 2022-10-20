@@ -1,8 +1,10 @@
 ### Python Syntax Notes (List vs. String):
-* length of list & string: `len(list)`
+* Length of list & string: `len(list)`
 
-* add to a list: `list.append(item)`
-* add to string (concatenate): `str += ""`
+* Add to a list: `list.append(item)`
+* Add to string (concatenate): `str += ""`
+* String splicing:
+    * getting the last 3 elements: `string[-3:]`
 
 ---
 ### Practice Qs
