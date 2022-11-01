@@ -50,8 +50,7 @@ def LCS(S1, S2):
         # branching trees
         jump2 = LCS(S1, S2[1:])
         jump1 = LCS(S1[1:], S2)
-        jump_both  = LCS(S1[1:], S2[1:]) # FORGOT about this!
-        return max(jump2, jump1, jump_both)
+        return max(jump2, jump1)
 ``` 
 
 
