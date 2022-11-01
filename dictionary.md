@@ -1,6 +1,8 @@
 ## Python Dictionary (Hashmap in Java)
 - **constant time lookup** –> don't need to loop to access anymore 
 	- whereas in list: ineffecient to find items 
+- **memoization** 
+	- check if we already know the solution to our particular problem
 
 
 ```python 
