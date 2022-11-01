@@ -32,7 +32,7 @@ def change(amount, denominations):
     else:
         # don't need peel off denominations bc can use many of same coins values 
         useIt = 1 + change(amount - denominations[0], denominations)   
-        loseIt = change(amount , denominations[1:])
+        loseIt = change(amount , denominations[1:]) # original amount & exclude this coin
         return min(useIt, loseIt)
 ```
 
