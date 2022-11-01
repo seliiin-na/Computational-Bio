@@ -3,6 +3,7 @@
 	- whereas in list: ineffecient to find items 
 - **memoization** 
 	- check if we already know the solution to our particular problem
+	- each time we make a recursive call, store the output in memo (to be retrieved later)
 
 
 ```python 
