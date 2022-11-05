@@ -19,21 +19,26 @@ def subset(target, numList):
         return useIt or loseIt
 ```
 
-### Q2: Smallest # of coins for a amount 
+### Q2: Smallest # of coins for a amount (use Dictionary for memo)
 Given an `amount` and a list of coin values, return the smallest # of coins to make that amount
 ```python
-def change(amount, denominations):
+def change(amount, denominations, memo):
     if amount == 0:
         return 0 
     elif denominations == []:
         return float('infinity')
+	elif (amount, denominations) in memo:
+        return memo[(amount, denominations)]
     elif denominations[0] > amount:
-        return change(amount, denominations[1:])
+        solution = memoizedChange(amount, denominations[1:], memo)
+        memo[(amount, denominations)] = solution # store the solution to memo 
+        return solution
     else:
-        # don't need peel off denominations bc can use many of same coins values 
-        useIt = 1 + change(amount - denominations[0], denominations)   
-        loseIt = change(amount , denominations[1:]) # original amount & exclude this coin
-        return min(useIt, loseIt)
+        useIt = 1 + memoizedChange(amount-denominations[0],denominations, memo)
+        loseIt = memoizedChange(amount,denominations[1:], memo)
+        solution = min(useIt, loseIt)
+        memo[(amount, denominations)] = solution
+        return solution
 ```
 
 ### Q3: LCS (Longest Common Subsequence)
