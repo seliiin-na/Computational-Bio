@@ -34,7 +34,16 @@ def codingStrandToAA(DNA):
         result_aa += amino(DNA[index:index + 3])
     return result_aa
 ```
-
+```python
+def oneFrame(DNA):
+    result = []
+    # look for the 3 codon demarcation possibilities (starting at 0th, 1st, 2rd positions)
+    # if sees a START codon, add the result of restOfORF() to the list 
+    for index in range(0,len(DNA),3):
+        if DNA[index : index + 3] == "ATG":
+            result.append(restOfORF(DNA[index:]))
+    return result
+```
 
 ##### Q3: using `in`
 `in` in for-loops
