@@ -59,3 +59,15 @@ def LCS(S1, S2):
 ``` 
 
 
+### Q4: Finding the _minimal_ set of transformations -> Aligning Sequences 
+- assume simpliest transformation to cover the changes (deletion, insertion, mutation)
+- matched score = matched_letter - (deletion + insertion + mutation)
+	- want to maximize matched letters and minimize penalties 
+
+
+
+
+
+
+
+
