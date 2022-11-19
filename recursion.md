@@ -1,3 +1,7 @@
+## Recursion
+* base case + general case:
+	* general case: (a little bit of the work) + functionCall()
+
 ### Q1: Subset Sum
 Check whether we can add together some subset of the numbers in the list to get a sum equal to the `target`
 
