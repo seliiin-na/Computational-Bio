@@ -5,6 +5,7 @@
 * Add to string (concatenate): `str += ""`
 * String splicing:
     * getting the last 3 elements: `string[-3:]`
+* can use `[]` to get characters from specific indices of a string
 
 ---
 ### Practice Qs
