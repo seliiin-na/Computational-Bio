@@ -6,6 +6,7 @@
 * String splicing:
     * getting the last 3 elements: `string[-3:]`
 * can use `[]` to get characters from specific indices of a string
+* indexing & slicing work the SAME for both lists and strings!
 
 ---
 ### Practice Qs
